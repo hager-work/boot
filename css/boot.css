@@ -1,0 +1,179 @@
+:root{
+    --pas-dark:rgb(11, 11, 46);
+    --pas-green:rgb(16, 99, 16) ;
+    --ps-yellow: rgb(248, 248, 24);
+    --ps-red: rgb(182, 14, 14) ;
+--color: rgb(223, 219, 219);
+
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+height: 5000px;
+}
+.navbar img {
+   width: 80px; 
+   height: 40px;
+} 
+.navbar {
+    background-color: var(--pas-dark);
+}
+.fa-bars{
+    color: aliceblue;
+}
+.navbar-nav li a{
+color: white;
+}
+.navbar-nav  .active,
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover{
+color: var(--pas-green);
+}
+.search svg{
+color: var(--pas-green);
+}
+.navbar .search{
+    border-left: 1px solid white;
+}
+ .btn{ 
+      background-color:var(--ps-red) !important;
+      color: white !important;
+}
+.landing{
+    background-color: var(--pas-dark);
+    height: calc(100vh - 80px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.landing .text{
+    color: aliceblue;
+    font-weight: bold;
+}
+
+ .feat{
+    text-align: center;
+}
+ .feat svg{
+font-size: 50px;
+color: var(--ps-yellow) ;
+}
+.feat::after{
+    content: '';
+    position: absolute;
+    width: 160px;
+     background-color: var(--pas-green);
+     height: 2px;
+     left: 50%;
+     transform: translateX(-50%);
+}
+.vell1 .icon{
+    height: 200px;
+}
+.vell1 .icon .svg{
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+ .vell1 .icont{
+font-size: 14rem;
+color:var(--color);
+}
+ .vell1 .iconv{
+    font-size: 60px;
+    color: var(--pas-green);
+}
+.vell1{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.work-space ul li{
+    margin: 10px 30px;
+}
+.work-space ul .active{
+    color: var(--ps-yellow);
+    background-color: var(--ps-red);
+    padding:0 15px ;
+}
+.work-space{
+    padding-top: 20px;
+    padding-bottom:20px ;
+    background-color:var(--color) ;
+} 
+.work-space .box{
+    padding: 5px ;
+    overflow: hidden;
+    position: relative;
+} 
+.work-space .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgba(0, 128, 0, 0.521);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    color: aliceblue;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 5px));
+}
+.work-space .box:hover:before{
+    transform: translateX(0);
+}
+.stuff h3{
+    color: var(--ps-yellow);
+}
+.team h3{
+    color: var(--ps-yellow);
+
+}
+.team{
+    background-color: var(--color);
+}
+.project{
+    background-color: var(--pas-dark);
+}
+.project h4{
+    color: var(--ps-yellow);
+}
+.card-bottom{
+    background-color: var(--ps-yellow);
+}
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid hsl(0, 23%, 97%);
+    background-color: transparent;
+}
+input[type="text"]:focus{
+outline: none;
+}
+.card-bottom input ::placeholder{
+    color: white;
+}
+.card-bottom h4{
+    color: var(--ps-red);
+}
+.footer{
+    background-color: var(--pas-dark);
+}
+.footer img{
+    width: 60%;
+}
+.footer .twwiter{
+color: rgb(0, 225, 255);
+}
+.footer .instgram{
+    color: rgb(211, 33, 63);
+}
+.footer .facebook{
+    color: blue;
+}
+.footer .linkidin{
+    color: aliceblue;
+}
